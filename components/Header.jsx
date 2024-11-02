@@ -5,10 +5,11 @@ import alienIcon from "../public/alienIcon.svg"
 
 // components
 import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
     return (
-        <header className="py-8 xl:py-12 text-white ">
+        <header className="py-8 xl:py-8 text-white ">
             <div className="container mx-auto flex justify-between items-center">
 
                 {/* logo */}
@@ -32,7 +33,9 @@ const Header = () => {
                 </div>
 
                 {/* mobile nav */}
-                <div className="xl:hidden">mobile nav</div>
+                <div className="xl:hidden">
+                    <MobileNav />
+                </div>
             </div>
         </header>
     )
